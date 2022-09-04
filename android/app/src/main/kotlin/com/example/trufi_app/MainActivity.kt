@@ -1,4 +1,4 @@
-package com.example.trufi_app
+package com.addismaptransit.app
 
 import io.flutter.embedding.android.FlutterActivity
 
