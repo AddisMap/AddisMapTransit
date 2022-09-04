@@ -6,29 +6,31 @@ import 'package:trufi_core/base/widgets/drawer/menu/social_media_item.dart';
 import 'package:trufi_core/default_values.dart';
 import 'package:trufi_core/trufi_core.dart';
 import 'package:trufi_core/trufi_router.dart';
+import 'package:addismaptransit_app/base/blocks/map_tile_provider/map_tile_provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initHiveForFlutter();
   runApp(
     TrufiApp(
-      appNameTitle: 'ExampleApp',
+      appNameTitle: 'AddisMapTransit',
       blocProviders: [
         ...DefaultValues.blocProviders(
-          otpEndpoint: "https://cbba.trufi.app/otp",
-          otpGraphqlEndpoint: "https://cbba.trufi.app/otp/index/graphql",
+          otpEndpoint: "https://pt.addismap.com/otp/routers/default",
+          otpGraphqlEndpoint: "https://pt.addismap.com/otp/routers/default/index/graphql",
           mapConfiguration: MapConfiguration(
-            center: const TrufiLatLng(-17.392600, -66.158787),
+            center: const TrufiLatLng(9.005401, 38.763611),
           ),
-          searchAssetPath: "assets/data/search.json",
-          photonUrl: "https://cbba.trufi.app/photon",
+          searchAssetPath: "",
+          photonUrl: "https://photon.komoot.io",
+          mapTileProviders: [OpenPlaceGuideMapTile()]
         ),
       ],
       trufiRouter: TrufiRouter(
         routerDelegate: DefaultValues.routerDelegate(
-          appName: 'ExampleApp',
-          cityName: 'City',
-          countryName: 'Country',
+          appName: 'AddisMapTransit',
+          cityName: 'Addis Ababa',
+          countryName: 'Ethiopia',
           backgroundImageBuilder: (_) {
             return Image.asset(
               'assets/images/drawer-bg.jpg',
