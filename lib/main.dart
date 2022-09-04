@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trufi_core/base/blocs/map_configuration/map_configuration_cubit.dart';
+import 'package:trufi_core/base/blocs/theme/theme_cubit.dart';
 import 'package:trufi_core/base/models/trufi_latlng.dart';
 import 'package:trufi_core/base/utils/graphql_client/hive_init.dart';
 import 'package:trufi_core/base/widgets/drawer/menu/social_media_item.dart';
@@ -7,6 +8,10 @@ import 'package:trufi_core/default_values.dart';
 import 'package:trufi_core/trufi_core.dart';
 import 'package:trufi_core/trufi_router.dart';
 import 'package:addismaptransit_app/base/blocks/map_tile_provider/map_tile_provider.dart';
+
+final ThemeData standardTheme = ThemeData();
+final ThemeData darkTheme = ThemeData.dark();
+const ethiopiaGreen = Color(0xff27ae60);
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -44,6 +49,14 @@ void main() async {
             urlFacebook: 'https://www.facebook.com/Example',
           ),
         ),
+      ),
+      trufiBaseTheme: TrufiBaseTheme(themeMode: ThemeMode.system, brightness: Brightness.dark,
+          theme: standardTheme.copyWith(
+            colorScheme: standardTheme.colorScheme.copyWith(secondary: ethiopiaGreen),
+          ),
+          darkTheme: darkTheme.copyWith(
+            colorScheme: darkTheme.colorScheme.copyWith(secondary: ethiopiaGreen),
+          ),
       ),
     ),
   );
