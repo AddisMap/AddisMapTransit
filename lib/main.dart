@@ -26,7 +26,7 @@ void main() async {
           mapConfiguration: MapConfiguration(
             center: const TrufiLatLng(9.005401, 38.763611),
           ),
-          searchAssetPath: "",
+          searchAssetPath: "assets/data/search.json",
           photonUrl: "https://photon.komoot.io",
           mapTileProviders: [OpenPlaceGuideMapTile()]
         ),
