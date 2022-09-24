@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:trufi_core/base/blocs/localization/trufi_localization_cubit.dart';
 import 'package:trufi_core/base/blocs/map_configuration/map_configuration_cubit.dart';
 import 'package:trufi_core/base/blocs/theme/theme_cubit.dart';
 import 'package:trufi_core/base/models/trufi_latlng.dart';
+import 'package:trufi_core/base/pages/about/translations/about_localizations.dart';
+import 'package:trufi_core/base/pages/feedback/translations/feedback_localizations.dart';
+import 'package:trufi_core/base/pages/saved_places/translations/saved_places_localizations.dart';
 import 'package:trufi_core/base/utils/graphql_client/hive_init.dart';
 import 'package:trufi_core/base/widgets/drawer/menu/social_media_item.dart';
 import 'package:trufi_core/default_values.dart';
@@ -28,9 +32,22 @@ void main() async {
           ),
           searchAssetPath: "assets/data/search.json",
           photonUrl: "https://photon.komoot.io",
-          mapTileProviders: [OpenPlaceGuideMapTile()]
+          mapTileProviders: [OpenPlaceGuideMapTile()],
         ),
       ],
+      trufiLocalization:
+        const TrufiLocalization(
+          currentLocale: Locale("en"),
+          localizationDelegates: [
+            SavedPlacesLocalization.delegate,
+            FeedbackLocalization.delegate,
+            AboutLocalization.delegate,
+          ],
+          supportedLocales: [
+            Locale('en'),
+            Locale('am'),
+          ],
+        ),
       trufiRouter: TrufiRouter(
         routerDelegate: DefaultValues.routerDelegate(
           appName: 'AddisMapTransit',
@@ -42,11 +59,12 @@ void main() async {
               fit: BoxFit.cover,
             );
           },
-          urlFeedback: 'https://example/feedback',
-          emailContact: 'example@example.com',
-          urlShareApp: 'https://example/share',
+          urlFeedback: 'https://www.addismaptransit.com/',
+          emailContact: 'info@addismap.com',
+          urlShareApp: 'https://www.addismaptransit.com/',
           urlSocialMedia: const UrlSocialMedia(
-            urlFacebook: 'https://www.facebook.com/Example',
+            urlFacebook: 'https://www.facebook.com/AddisMapTransit',
+            urlTwitter: 'https://www.twitter.com/AddisMapTransit',
           ),
         ),
       ),
