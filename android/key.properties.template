@@ -1,0 +1,4 @@
+storePassword=from bame passwords
+keyPassword=same from bame passwords
+keyAlias=upload
+storeFile=git/reporting/ICT/android-keystore/upload-keystore.jks

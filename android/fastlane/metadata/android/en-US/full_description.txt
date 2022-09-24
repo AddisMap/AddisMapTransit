@@ -1,0 +1,12 @@
+✔ Complete door-to-door navigation
+✔ Different means of transport (Anbessa Bus, Sheger Bus, Minibus, Lightrail)*
+✔ Alternative routes
+✔ Multilingual
+✔ Intuitive user interface
+✔ Search suggestions for street names, intersections and POIs
+✔ Saving search favorites
+✔ GPS to show the location on the map
+✔ Display of routes by car
+
+
+* Complete coverage coming soon
