@@ -757,9 +757,11 @@ packages:
   trufi_core:
     dependency: "direct main"
     description:
-      path: "../trufi-core"
-      relative: true
-    source: path
+      path: "."
+      ref: translation-am
+      resolved-ref: f1a0d12ac6654f95d311659f801e3aaaef9db4e6
+      url: "https://github.com/AddisMap/trufi-core.git"
+    source: git
     version: "3.2.0"
   tuple:
     dependency: transitive
