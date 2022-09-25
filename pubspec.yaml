@@ -34,7 +34,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   trufi_core:
     git:
-      url: git://github.com/AddisMap/trufi-core.git
+      url: https://github.com/AddisMap/trufi-core.git
       ref: no-reviews
 
 dev_dependencies:
