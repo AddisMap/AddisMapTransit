@@ -2,7 +2,6 @@
 - Different means of transport (Anbessa Bus, Sheger Bus, Minibus, Lightrail)*
 - Alternative routes
 - Multilingual (Amharic is currently partial)
-- Intuitive user interface
 - Store locations, like home, work place
 - Search suggestions for street names, intersections and POIs
 - Saving search favorites
