@@ -239,12 +239,14 @@ packages:
     source: hosted
     version: "8.2.1"
   geolocator_android:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
-      name: geolocator_android
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "3.1.8"
+      path: geolocator_android
+      ref: floss
+      resolved-ref: "156b6b19dd6191c7c19c80e6858dc89a6a4298be"
+      url: "https://github.com/Zverik/flutter-geolocator.git"
+    source: git
+    version: "4.1.3"
   geolocator_apple:
     dependency: transitive
     description:
@@ -750,9 +752,11 @@ packages:
   trufi_core:
     dependency: "direct main"
     description:
-      path: "../trufi-core"
-      relative: true
-    source: path
+      path: "."
+      ref: no-reviews
+      resolved-ref: e3ae1c03c4287171feebc48395e15b275b693638
+      url: "https://github.com/AddisMap/trufi-core.git"
+    source: git
     version: "3.2.0"
   tuple:
     dependency: transitive
