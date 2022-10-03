@@ -24,7 +24,6 @@ sudo gem install fastlane
 cd android && fastlane supply --track internal --version-code 2
 ```
 
-
 ### Taking Screenshots
 
 1. Open Browserstack
@@ -45,3 +44,6 @@ Screenshot 6 - Show routes
 Save android/fastlane/metadata/android/en-US/images/tenInchScreenshots + sevenInchScreenshots 
 Screenshot 1 - Airport Parking -> Bandira -> Routes and Map overview
 
+### Building compact APK for GitHub Release
+
+`flutter build apk  --analyze-size --target-platform android-arm`
