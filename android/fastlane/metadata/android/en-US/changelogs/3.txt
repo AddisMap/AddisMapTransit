@@ -1,0 +1,2 @@
+- More Amharic
+- Removed non-FLOSS dependencies for F-droid
