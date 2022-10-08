@@ -26,7 +26,7 @@ tasks:
             "Request your token here: https://appetize.io/docs#request-api-token if you want to test android builds"
       else
           curl -sS --http1.1 "https://$APPETIZE_API_TOKEN@api.appetize.io/v1/apps/$APPETIZE_PUBLICKEY" \
-              -F "file=@/workspace/template-flutter/build/app/outputs/flutter-apk/app.apk" \
+              -F "file=@/workspace/template-flutter/build/app/outputs/flutter-apk/app-debug.apk" \
               -F platform=android \
               -F "buttonText=Start App" \
               -F "postSessionButtonText=Start App" \
