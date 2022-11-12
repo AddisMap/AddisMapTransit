@@ -1,3 +1,11 @@
+# Development
+
+## Stack
+
+* Flutter 3.3.x
+* Africa Tiles
+* For Android and iOS
+
 ## Creating new Search data for Addis Ababa
 
 Warning: BBOX Params are flipped!
@@ -47,3 +55,34 @@ Screenshot 1 - Airport Parking -> Bandira -> Routes and Map overview
 ### Building compact APK for GitHub Release
 
 `flutter build apk  --analyze-size --target-platform android-arm`
+
+# iOS
+
+We are developing at MacStadium.com (thank you!)
+
+## Installation on a fresh MacMini
+
+* Install Xcode via App Store (Free)
+  * Also run `xcode-select --install` to install Cmdline tools
+  * `sudo xcode-select -s /Applications/Xcode.app/Contents/Developer`
+  * open xcode, accept licenses
+* Refer to https://docs.flutter.dev/get-started/install/macos to install flutter
+  * Download the ZIP, extract to development/
+  * Add path to .bash_profile `export PATH="$PATH:/Users/administrator/development/flutter/bin"`
+  * `flutter doctor`
+  * install homebew
+    * `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+  * install [cocoapods](https://guides.cocoapods.org/using/getting-started.html#installation)
+    * `brew install cocoapods`
+* Clone this git `cd ~/development && git clone https://github.com/AddisMap/addismaptransit`
+* `cd addismaptransit` 
+* Setup signing as instructed by `flutter build ios`
+  * open ios/Runner.xcworkspace
+  * Select or create development signing certificate
+
+## Archiving
+
+* In Xcode -> 
+* In Xcode, Window -> Organizer -> Archives
+
+
