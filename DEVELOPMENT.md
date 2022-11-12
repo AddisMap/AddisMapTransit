@@ -80,9 +80,12 @@ We are developing at MacStadium.com (thank you!)
   * open ios/Runner.xcworkspace
   * Select or create development signing certificate
 
-## Archiving
+## Archiving 
 
-* In Xcode -> 
+In Xcode:
+
+* Product -> Destination -> Any iOS Device
+* Product -> Archive
 * In Xcode, Window -> Organizer -> Archives
 
 
