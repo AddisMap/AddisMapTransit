@@ -28,7 +28,7 @@ Sponsored for a one year term under the [DigitalTransport 4 Africa Innovation Ch
 
 FOSS Plan support by [MacStadium](https://macstadium.com) and [BrowserStack](https://browserstack.com)
 
-![FOSS Sponsors](https://addismaptransit.com/wp-content/uploads/sites/6/2022/11/foss-sponsors.png)
+![FOSS Sponsors](https://addismaptransit.com/wp-content/uploads/sites/6/2022/11/foss-sponsors-1.png)
 
 ## Cooperations
 
