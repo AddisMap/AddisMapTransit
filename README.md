@@ -24,7 +24,7 @@ or get the APK from the [Releases section](https://github.com/AddisMap/AddisMapT
 
 Sponsored for a one year term under the [DigitalTransport 4 Africa Innovation Challenge](https://digitaltransport4africa.org/innovation-challenge/) by [WRI](https://wri.org), [AFD FR](https://www.afd.fr/en) - partners:
 
-![DT4A Sponsors](https://digitaltransport4africa.org/wp-content/uploads/2021/01/logos_footer-3.jpg)
+![DT4A Sponsors](https://addismaptransit.com/wp-content/uploads/sites/6/2022/11/sponsors.png)
 
 FOSS Plan support by [MacStadium](https://macstadium.com) and [BrowserStack](https://browserstack.com)
 
