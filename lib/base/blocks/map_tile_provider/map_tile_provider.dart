@@ -5,11 +5,11 @@ import 'package:trufi_core/base/blocs/map_tile_provider/map_tile_provider.dart';
 
 class OpenPlaceGuideMapTile extends MapTileProvider {
   @override
-  List<LayerOptions> buildTileLayerOptions() {
+  List<Widget> buildTileLayerOptions() {
     return [
-      TileLayerOptions(
+      TileLayer(
         urlTemplate: "https://africa.tiles.openplaceguide.org/styles/bright/{z}/{x}/{y}.png",
-        tileProvider: const DefaultMapTileCaching(),
+        tileProvider: DefaultMapTileCaching(),
       ),
     ];
   }
@@ -38,12 +38,12 @@ class OSMMapLayer extends MapTileProvider {
   }) : super();
 
   @override
-  List<LayerOptions> buildTileLayerOptions() {
+  List<Widget> buildTileLayerOptions() {
     return [
-      TileLayerOptions(
+      TileLayer(
         urlTemplate: mapTilesUrl,
-        subdomains: ['a', 'b', 'c'],
-        tileProvider: const DefaultMapTileCaching(),
+        subdomains: const ['a', 'b', 'c'],
+        tileProvider: DefaultMapTileCaching(),
       ),
     ];
   }
@@ -64,10 +64,10 @@ class OSMMapLayer extends MapTileProvider {
 }
 
 class DefaultMapTileCaching extends TileProvider {
-  const DefaultMapTileCaching();
+  DefaultMapTileCaching();
 
   @override
-  ImageProvider getImage(Coords coords, TileLayerOptions options) {
+  ImageProvider getImage(Coords coords, TileLayer options) {
     return CachedNetworkImageProvider(getTileUrl(coords, options));
   }
 }
