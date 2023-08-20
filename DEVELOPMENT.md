@@ -1,8 +1,14 @@
 # Development
 
+## TrufiCore
+
+Based on Trufi Core https://github.com/AddisMap/trufi-core/releases/
+
+* Tag new Trufi Core release, update pubspec.yaml
+
 ## Stack
 
-* Flutter 3.3.x
+* Flutter 3.3.3
 * Africa Tiles
 * For Android and iOS
 
@@ -50,17 +56,24 @@ Screenshot 6 - Show routes
 5. Rotate Device
 
 Save android/fastlane/metadata/android/en-US/images/tenInchScreenshots + sevenInchScreenshots 
-Screenshot 1 - Airport Parking -> Bandira -> Routes and Map overview
+
+For iOS:
+
+BrowserStack -> TestFlight -> Sign In
+* iPhone 11 Pro Max (6.5" screen)
+* iPhone 8 Plus (5.5" screen)
+* iPad Pro 12.9 2021 (6th gen)
+* iPad Pro 12.9 2017 (2th gen)
 
 ### Building compact APK for GitHub Release
 
 `flutter build apk  --analyze-size --target-platform android-arm`
 
-# iOS
+## iOS
 
 We are developing at MacStadium.com (thank you!)
 
-## Installation on a fresh MacMini
+### Installation on a fresh MacMini
 
 * Install Xcode via App Store (Free)
   * Also run `xcode-select --install` to install Cmdline tools
@@ -80,12 +93,13 @@ We are developing at MacStadium.com (thank you!)
   * open ios/Runner.xcworkspace
   * Select or create development signing certificate
 
-## Archiving 
+### Archiving 
 
 In Xcode:
 
 * Product -> Destination -> Any iOS Device
 * Product -> Archive
-* In Xcode, Window -> Organizer -> Archives
+* Opens the uploader, click next, next, next ...
+* Publish via https://appstoreconnect.apple.com/
 
 
