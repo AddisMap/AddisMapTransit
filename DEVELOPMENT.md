@@ -32,11 +32,24 @@ sudo apt install ruby ruby-dev
 sudo gem install fastlane
 ```
 
-### Uploading
+### Releasing / Uploading to Google Play
 
+1. Bump version in pubspec.yaml
+2. Add changelog in `fastlane/metadata/android/en-US/changelogs`
+2. Push to GitHub, merge to master, make a new tag
+ 
+#### GitHub Release
+3. `flutter build apk  --analyze-size --target-platform android-arm`
+4. Upload apk to GitHub
+
+### Playstore Release
+
+5. Build an use fastlane supply
 ```
-cd android && fastlane supply --track internal --version-code 2
+flutter build appbundle
+cd android && fastlane supply --track internal --aab ../build/app/outputs/bundle/release/app-release.aab --version-code x # replace by the version code from pubspec.yaml 
 ```
+6. Go to [playstore](https://play.google.com/console/u/0/developers/?pli=1), check everything and promote from the internal to the the public track
 
 ### Taking Screenshots
 

@@ -1,0 +1,4 @@
+- Updated Search Data
+- Notification Function
+- More Amharic Translations
+- Target SDK: Android 13 (API-Level 33)
