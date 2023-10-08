@@ -96,7 +96,7 @@ We are developing at MacStadium.com (thank you!)
   * Download the ZIP, extract to development/
   * Add path to .bash_profile `export PATH="$PATH:/Users/administrator/development/flutter/bin"`
   * `flutter doctor`
-  * install homebew
+  * install homebrew
     * `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
   * install [cocoapods](https://guides.cocoapods.org/using/getting-started.html#installation)
     * `brew install cocoapods`
@@ -108,11 +108,36 @@ We are developing at MacStadium.com (thank you!)
 
 ### Archiving 
 
+Eventually upgrade flutter, check with `flutter doctor`
+
+```
+cd development/addismaptransit
+git pull
+flutter build ios
+```
+
 In Xcode:
 
-* Product -> Destination -> Any iOS Device
-* Product -> Archive
-* Opens the uploader, click next, next, next ...
+* Product -> Destination -> Any iOS Device 
+* Product -> Archive (if already built: Window -> Organizer -> Archives)
+* Opens the uploader, select current most recent version, click Distribute, Next, App store connect, 
+  * Next, Upload, Next,
+  * All options, Next,
+  * Automatically manage signing, of this is is not working:
+    * Manual manage signing, next...
+    * Use apple distribution certificate
+    * Create profile: https://developer.apple.com/account/resources/profiles/add Distribution - App Store
+    * Runner.app Download Profile
+* The local keychain needs to be opened: click always allow ! not only allow ! (use the login password)
 * Publish via https://appstoreconnect.apple.com/
 
+#### Common Issues
+
+* "the request expected results but none were found - error while generation code signature" in the last step when uploading
+  * Signature expired? Follow the steps above 
+* Local keychain password keeps asking again and again:
+  * It's the login password
+  * Window might have appeared multiple times
+  * use Always Allow
+  * see also https://stackoverflow.com/a/50657877/288568
 
