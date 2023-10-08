@@ -116,6 +116,8 @@ git pull
 flutter build ios
 ```
 
+* First create the new version in https://appstoreconnect.apple.com/apps
+
 In Xcode:
 
 * Product -> Destination -> Any iOS Device 
@@ -129,7 +131,14 @@ In Xcode:
     * Create profile: https://developer.apple.com/account/resources/profiles/add Distribution - App Store
     * Runner.app Download Profile
 * The local keychain needs to be opened: click always allow ! not only allow ! (use the login password)
-* Publish via https://appstoreconnect.apple.com/
+* Publish via https://appstoreconnect.apple.com/apps
+  * Choose the app
+  * Click the little "+" icon to create a new store version
+  * Enter the store version manually
+  * Paste he changelog
+  * Eventually wait some time until the build can be selected (you should receive and email notification)
+* Click save, then add for review
+* Submit to App Review
 
 #### Common Issues
 
