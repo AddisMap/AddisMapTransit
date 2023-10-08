@@ -732,8 +732,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "addismaptransit-1.0.0"
-      resolved-ref: d7ca9e80a37c0121feb05ea35b87f8801f4e91d8
+      ref: "addismaptransit-1.0.1"
+      resolved-ref: bd7dc84e9fd0a4fb31b85d5125d38c718aa7c620
       url: "https://github.com/AddisMap/trufi-core.git"
     source: git
     version: "3.4.3"
