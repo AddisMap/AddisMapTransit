@@ -8,6 +8,7 @@ import 'package:trufi_core/base/pages/feedback/translations/feedback_localizatio
 import 'package:trufi_core/base/pages/saved_places/translations/saved_places_localizations.dart';
 import 'package:trufi_core/base/utils/graphql_client/hive_init.dart';
 import 'package:trufi_core/base/widgets/drawer/menu/social_media_item.dart';
+import 'package:trufi_core/base/widgets/screen/lifecycle_reactor_notification.dart';
 import 'package:trufi_core/default_values.dart';
 import 'package:trufi_core/trufi_core.dart';
 import 'package:trufi_core/trufi_router.dart';
@@ -59,12 +60,16 @@ void main() async {
               fit: BoxFit.cover,
             );
           },
-          urlFeedback: 'https://www.addismaptransit.com/',
+          urlFeedback: 'https://addismaptransit.com/support/',
           emailContact: 'info@addismap.com',
-          urlShareApp: 'https://www.addismaptransit.com/',
+          urlShareApp: 'https://addismaptransit.com/store.php',
           urlSocialMedia: const UrlSocialMedia(
             urlFacebook: 'https://www.facebook.com/AddisMapTransit',
             urlTwitter: 'https://www.twitter.com/AddisMapTransit',
+          ),
+          lifecycleReactorHandler: LifecycleReactorNotifications(
+            url:
+            'https://addismaptransit.com/app_static_files/notification.json',
           ),
         ),
       ),

@@ -15,7 +15,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 0.3.0+3
+version: 1.0.1+6
 
 environment:
   sdk: ">=2.15.0 <3.0.0"
@@ -35,7 +35,7 @@ dependencies:
   trufi_core:
     git:
       url: https://github.com/AddisMap/trufi-core.git
-      ref: addismaptransit
+      ref: addismaptransit-1.0.1
 
 dependency_overrides:
   geolocator_android:
@@ -53,7 +53,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^1.0.0
+  flutter_lints: ^2.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
