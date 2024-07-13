@@ -37,6 +37,6 @@ FOSS Plan support by [MacStadium](https://macstadium.com) and [BrowserStack](htt
 ## Stack
 
 * Flutter 3
-* Trufi Core
+* Trufi Core 4
 * OpenTripPlanner Backend
 * [OpenPlaceGuide Africa](https://africa.tiles.openplaceguide.org/) tileserver
